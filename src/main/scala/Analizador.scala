@@ -1,3 +1,4 @@
+import Contribuyente.imprimeDatos
 
 trait Analizador extends App {
 
@@ -6,6 +7,6 @@ trait Analizador extends App {
   //Al extender Analizador, pedirá que se implemente la función abstracta impimeContribuyentes,
   // la cual hará uso de la función imprimeDatos del companion object definido en el ejercicio 7.
   def imprimeContribuyentes(c: Seq[Contribuyente]): Unit = {
-    // implementa
+    c.map(imprimeDatos)
   }
 }

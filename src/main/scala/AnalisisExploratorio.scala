@@ -1,6 +1,6 @@
 import scala.math.BigDecimal
 
-object AnalisisExploratorio extends App {
+object AnalisisExploratorio extends Analizador {
 
   val dataset = Utilidades.readFile(fichero = "src/adult.data.clean.csv")
   // Implementa la función
@@ -91,5 +91,6 @@ object AnalisisExploratorio extends App {
 
   // ejercicio-11
   // llama a la función impimeContribuyentes
+  imprimeContribuyentes(c = dataset)
 
 }
